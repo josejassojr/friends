@@ -1,0 +1,30 @@
+<% if user_signed_in? %>
+
+  <table class="table table-striped caption-top table-bordered">
+    <caption>List of Friends</caption>
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Email</th>
+        <th scope="col">User Id</th>
+        <th></th>
+      <tr>
+    </thead>
+    <tbody>
+      <div id="friends">
+        <% @friends.each do |friend| %> 
+          <% if friend.user == current_user %>
+            <%= render friend %>
+          <% end %>
+        <% end %>
+      </div>
+    </tbody>
+  </table>
+<%= link_to "New friend", new_friend_path, class:"btn btn-secondary" %>
+
+<% else %>
+  <h1>Hello, World!</h1>
+  This is my first rails webpage.
+<% end %>
+
