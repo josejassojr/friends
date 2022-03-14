@@ -1,6 +1,6 @@
 # README
 
-Friends Web App made with Rails following [video] (https://www.youtube.com/watch?v=fmyvWz5TUWg) by John Elder. 
+Friends Web App made with Rails following [video](https://www.youtube.com/watch?v=fmyvWz5TUWg) by John Elder. 
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
